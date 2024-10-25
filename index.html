@@ -60,7 +60,7 @@
 		console.log('X defined');
 		(0, eval)(function(S, E) {
 			console.log('cs');
-			return(E = X(12, 51, 22, 96, "error", "bg", null)) && (S.eval(E.createScript("1")) === 1 ? function(Q) {
+			return(E = X(12, 51, 22, 96, "error", "bg", null)) && S.eval(E.createScript("1")) === 1 ? function(Q) {
 				console.log('cs2');
 				return E.createScript(Q)
 			} : function(Q) {
