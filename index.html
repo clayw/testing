@@ -27,20 +27,22 @@
 		var X = function(S, E, Q, q, g, Z, G, P, Y, y, w, a) {
 			console.log('in X');
 				for(a = (w = 92, q);;) try {
-					console.log('a = ' + a + ' w = ' + w + ' q = ' + q);
+					console.log('a = ' + a + ' w = ' + w + ' q = ' + q + ' Q= " + Q);
 					if(w == 99) break;
 					else if(w == 92) P = r.trustedTypes, Y = G, w = 33;
 					else {
+						console.log('else');
 						if(w == 24) return a = q, Y;
 						if(w == 33) w = P && P.createPolicy ? 4 : E;
 						else if(w == 49) a = q, w = Q;
-						else if(w == Q) w = r.console ? 16 : 24;
+						else if(w == Q) {console.log('w==Q'); w = r.console ? 16 : 24; }
 						else if(w == 4) a = S, Y = P.createPolicy(Z, {
 							createHTML: t,
 							createScript: t,
 							createScriptURL: t
 						}), w = 24;
 						else {
+							console.log('else2');
 							if(w == E) return Y;
 							w == 16 && (r.console[g](y.message), w = 24)
 						}
