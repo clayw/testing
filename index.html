@@ -85,6 +85,7 @@
 		(function() {
 			console.log('inner');
 			var k = function(a) {
+				console.log('in k');
 					var b = 0;
 					return function() {
 						return b < a.length ? {
@@ -109,6 +110,7 @@
 				x = n.JSON.stringify;
 
 			function y(a, b, c, d, f, l) {
+				console.log('in y');
 				f = f === void 0 ? "m" : f;
 				l = l === void 0 ? !0 : l;
 				var e = !1;
@@ -147,6 +149,7 @@
 			};
 
 			function C(a) {
+				console.log('in C(a)');
 				return new B(function(b) {
 					return b.substr(0, a.length + 1).toLowerCase() === a + ":"
 				})
@@ -161,6 +164,7 @@
 			});
 
 			function G() {
+				console.log('in G()');
 				var a = m((0, n[g].a)(p, function() {}, !1)).next().value,
 					b = location.href.match(/(\?|&)q=([^&]+)/);
 				return a([{
@@ -169,6 +173,7 @@
 			}
 
 			function H(a) {
+				console.log('in H(a) a=' + a);
 				var b = new Date;
 				b.setSeconds(b.getSeconds() + (Number(ce) || 300));
 				var c = "SG_SS=" + a,
@@ -206,13 +211,16 @@
 			}
 
 			function I(a) {
+				console.log('err: ' + a);
 				navigator.sendBeacon("/gen_204?cad=sg_b_e&e=" + a, "")
 			};
 			(function() {
+				console.log('in hidden');
 				try {
 					var a;
 					window.sgs && sp && (a = window.sgs(sp));
 					var b = G();
+					console.log('a = ' + a);
 					a ? a.then(function() {
 						H(b)
 					}).catch(function(c) {
